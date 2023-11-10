@@ -97,7 +97,7 @@ function BorrowYourCar() {
                     from: currentAccount,
                     gas: "6721975"
                 })
-                alert('You have claimed ZJU Token.')
+                alert('You have claimed MaoMaoCoin.')
                 // @ts-ignore
                 setAccountBalance(await MaoMaoTokenContract.methods.balanceOf(currentAccount).call());
             } catch (error: any) {
@@ -239,6 +239,7 @@ function BorrowYourCar() {
             setduration("");
             // @ts-ignore
             setAccountBalance(await MaoMaoTokenContract.methods.balanceOf(currentAccount).call());
+            alert("borrow!");
         } catch (error : any){
             alert(error.message)
         }
@@ -252,6 +253,7 @@ function BorrowYourCar() {
                 gas: "6721975"
             });
             console.log(othercars);
+            alert("back!");
         } catch (error : any){
             alert(error.message)
         }
@@ -282,6 +284,7 @@ function BorrowYourCar() {
     }
 
     const setcartokenid = (id : number) => {
+        if(id < 0) alert("error TokenId");
         setcarTokenId(String(id));
         setshowcar(false);
     }
@@ -292,7 +295,7 @@ function BorrowYourCar() {
     <div>
         <button type="button" className="btn btn-primary" onClick={onClickConnectWallet}>Connect wallet</button>
     </div>
-    <h1>MaoMaoToken Balance: {Number(accountBalance)}</h1>
+    <h1>MaoMaoCoin Balance: {Number(accountBalance)}</h1>
     <h1>Cars Borrow</h1>
     <div>
          <button type="button" className="btn btn-primary" onClick={onClaimTokenAirdrop}>Get MaoMaoAir</button>
