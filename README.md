@@ -172,6 +172,10 @@ Solidity中主要通过`CarNFT`函数实现，会为参数地址`Car_to_Owner`�
 
 ![image-20231110201552330](C:\Users\G\AppData\Roaming\Typora\typora-user-images\image-20231110201552330.png)
 
+仅展示分配车与小狐狸交互，其他功能类似
+
+![image-20231111115641321](C:\Users\G\AppData\Roaming\Typora\typora-user-images\image-20231111115641321.png)
+
 可以看到`FreeCars`已经展示出配置文件已经分配好的车
 
 ![image-20231110201638371](C:\Users\G\AppData\Roaming\Typora\typora-user-images\image-20231110201638371.png)
@@ -181,6 +185,12 @@ Solidity中主要通过`CarNFT`函数实现，会为参数地址`Car_to_Owner`�
 当前猫猫币余额
 
 ![image-20231110202311568](C:\Users\G\AppData\Roaming\Typora\typora-user-images\image-20231110202311568.png)
+
+与小狐狸交互，仅展示借用id为0的车
+
+![image-20231111115739106](C:\Users\G\AppData\Roaming\Typora\typora-user-images\image-20231111115739106.png)
+
+![image-20231111115753186](C:\Users\G\AppData\Roaming\Typora\typora-user-images\image-20231111115753186.png)
 
 借用后余额
 
